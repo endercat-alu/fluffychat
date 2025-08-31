@@ -17,9 +17,6 @@ jobs:
       with:
         flutter-version: '3.x'
 
-    - name: Install OpenSSL
-      run: choco install openssl -y
-
     - name: Install Dependencies
       run: flutter pub get
 
@@ -33,4 +30,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: fluffychat-windows
-        path: build/windows/runner/Release/
+        path: build/windows/x64/runner/Release/
