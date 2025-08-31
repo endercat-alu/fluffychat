@@ -17,6 +17,9 @@ jobs:
       with:
         flutter-version: '3.x'
 
+    - name: Install OpenSSL
+      run: choco install openssl -y
+
     - name: Install Dependencies
       run: flutter pub get
 
